@@ -1,0 +1,3 @@
+Service Level Agreement (SLA) & Uptime
+
+We guarantee 99.9% uptime for Pro and Enterprise customers. In the event of downtime exceeding this SLA in a given month, customers are eligible for service credits proportional to the downtime. Please contact billing support to claim your credits. Note: Scheduled maintenance does not count towards downtime.

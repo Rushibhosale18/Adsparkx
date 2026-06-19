@@ -1,0 +1,8 @@
+API Rate Limits Documentation
+
+Our API has a strict rate limit to ensure fair usage.
+Free Tier: 100 requests per minute.
+Pro Tier: 1000 requests per minute.
+Enterprise Tier: Custom limits.
+
+When a rate limit is exceeded, the API returns a 429 Too Many Requests status code. Please implement exponential backoff in your application to handle this.

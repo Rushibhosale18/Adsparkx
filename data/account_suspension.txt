@@ -1,0 +1,3 @@
+Account Suspension Policy
+
+Accounts may be suspended for violations of our Terms of Service, including but not limited to: sending spam, hosting malicious content, or excessive abuse of our API. If you believe your account was suspended in error, please reply to the suspension email to appeal.

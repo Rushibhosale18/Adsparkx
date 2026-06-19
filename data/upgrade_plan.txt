@@ -1,0 +1,8 @@
+How to Upgrade Your Plan
+
+To upgrade from Free to Pro:
+1. Navigate to Account Settings > Billing.
+2. Click 'Upgrade Plan'.
+3. Select 'Pro' and choose Monthly or Annual billing.
+4. Enter your payment details.
+The new features will be available immediately upon successful payment.
