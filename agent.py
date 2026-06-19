@@ -1,6 +1,9 @@
 import os
 import json
 
+# Set HF cache to local directory so Render preserves it between build and deploy
+os.environ['HF_HOME'] = os.path.join(os.getcwd(), '.huggingface_cache')
+
 __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
