@@ -11,14 +11,22 @@ st.set_page_config(page_title="Adsparkx AI - Support Agent", page_icon="✨", la
 # Custom CSS for a premium look
 st.markdown("""
 <style>
-    /* Main background */
+    /* Main background with subtle animated gradient */
     .stApp {
         background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+        background-size: 200% 200%;
+        animation: gradient 15s ease infinite;
         color: #f8fafc;
         font-family: 'Inter', sans-serif;
     }
     
-    /* Headers */
+    @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+    
+    /* Headers with glowing text */
     h1 {
         background: -webkit-linear-gradient(45deg, #38bdf8, #818cf8);
         -webkit-background-clip: text;
@@ -26,33 +34,48 @@ st.markdown("""
         font-weight: 800;
         text-align: center;
         padding-bottom: 20px;
+        text-shadow: 0px 0px 20px rgba(56, 189, 248, 0.3);
     }
     
-    /* Chat bubbles */
+    /* Chat bubbles - Premium Glassmorphism */
     .stChatMessage {
-        background-color: rgba(30, 41, 59, 0.7);
-        border-radius: 12px;
-        padding: 15px;
+        background-color: rgba(30, 41, 59, 0.4);
+        border-radius: 16px;
+        padding: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        transition: transform 0.2s ease-in-out;
+    }
+    
+    .stChatMessage:hover {
+        transform: translateY(-2px);
         border: 1px solid rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        margin-bottom: 15px;
     }
     
     /* Expanders */
     .streamlit-expanderHeader {
-        background-color: rgba(56, 189, 248, 0.1);
+        background-color: rgba(56, 189, 248, 0.05);
         border-radius: 8px;
         color: #e0e7ff;
+        border: 1px solid rgba(129, 140, 248, 0.2);
     }
     
-    /* Inputs */
+    /* Input Container Glowing Effect */
     .stChatInputContainer {
-        border-radius: 15px;
-        border: 1px solid rgba(129, 140, 248, 0.5);
-        box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+        border-radius: 20px;
+        border: 1px solid rgba(129, 140, 248, 0.3);
+        box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+        background-color: rgba(15, 23, 42, 0.8);
+        backdrop-filter: blur(10px);
     }
     
+    .stChatInputContainer:focus-within {
+        border: 1px solid rgba(56, 189, 248, 0.8);
+        box-shadow: 0 0 30px rgba(56, 189, 248, 0.4);
+    }
 </style>
 """, unsafe_allow_html=True)
 
